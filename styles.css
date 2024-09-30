@@ -10,14 +10,14 @@
     align-items: center;
 }
 
-.logo-content {
+.logo {
     width: 100%; /* Cada ítem ocupa toda la fila */
     text-align: center;
     margin-bottom: 40px; /* Separación de dos renglones entre cada cuadro */
 }
 
 
-.logo-image {
+.logo {
     width: 400px;
     height: 300px;
     margin-bottom: 5px;
