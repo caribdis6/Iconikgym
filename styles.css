@@ -1,32 +1,3 @@
-
-/* New Block with Images (in columns) */
-.logo {
-    background-color: white;
-    color: black;
-    padding: 50px;
-    text-align: center;
-    display: flex;
-    flex-direction: column; /* Colocación en columnas */
-    align-items: center;
-}
-
-.logo {
-    width: 100%; /* Cada ítem ocupa toda la fila */
-    text-align: center;
-    margin-bottom: 40px; /* Separación de dos renglones entre cada cuadro */
-}
-
-
-.logo {
-    width: 400px;
-    height: 300px;
-    margin-bottom: 5px;
-}
-
-
-
-
-
 * {
     margin: 0;
     padding: 0;
@@ -34,6 +5,7 @@
 }
 
 body {
+    background-color: white; /* Fondo blanco */
     font-family: Arial, sans-serif;
     line-height: 1.6;
 }
@@ -54,7 +26,7 @@ body {
     color: white;
 }
 
-.hero h1 {
+.hero-content h1 {
     font-size: 4rem;
     margin-bottom: 20px;
 }
@@ -71,6 +43,116 @@ body {
 
 .cta-button:hover {
     background-color: darkred;
+}
+
+/* Registration Container */
+.registration-container {
+    background-color: white; /* Fondo rojo intenso */
+    color: black;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-between; /* Formulario a la izquierda, imágenes a la derecha */
+    align-items: center;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.registration-form-content {
+    flex: 1; /* El formulario ocupará la mitad del espacio */
+    margin-right: 20px; /* Espacio entre el formulario y las imágenes */
+}
+
+.towel-images {
+    display: flex;
+    flex-direction: column; /* Colocar las imágenes verticalmente */
+    justify-content: center;
+    align-items: flex-start; /* Alinearlas al inicio del contenedor */
+}
+
+.towel-images img {
+    width: 150px; /* Tamaño de las imágenes */
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px; /* Espacio entre las imágenes */
+}
+
+.registration-form-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.registration-form-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.registration-form-content form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.registration-form-content label {
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.registration-form-content input {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: yes;
+    font-size: 1rem;
+}
+
+.cta-button-register {
+    background-color: red;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.cta-button-register:hover {
+    background-color: darkred;
+    color: white;
+}
+
+/* Estilos para las imágenes de las toallas */
+.towel-images {
+    display: flex;
+    justify-content: center; /* Centrar las imágenes */
+    margin-bottom: 3px;
+}
+
+/* Responsivo: Para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    .registration-container {
+        flex-direction: column; /* Apilar el formulario e imágenes */
+    }
+
+    .towel-images {
+        flex-direction: row; /* Imágenes en fila en lugar de columna */
+        justify-content: center;
+    }
+
+    .towel-images img {
+        margin: 0 10px; /* Espacio entre las imágenes */
+        width: 100px;
+    }
+}
+
+/* Estilo específico para el logo iconik_rojo.png */
+#iconik-logo {
+    width: 400px; /* Ajusta el tamaño específico del logo */
+    height: auto; /* Mantiene las proporciones de la imagen */
+    display: block;
+    margin: 0 auto; /* Centra la imagen */
+    margin-bottom: 20px; /* Añade espacio debajo de la imagen */
 }
 
 /* Section Men */
@@ -243,7 +325,7 @@ body {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .hero h1 {
+    .hero-content h1 {
         font-size: 3rem;
     }
     
@@ -265,9 +347,28 @@ body {
     }
 }
 
+/* Countdown Styles */
+.countdown-box {
+    width: 90px;
+    height: auto; /* Cambiar el valor fijo por automático */
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column; /* Alinear los elementos en columna */
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    color: white;
+    margin: 0 10px;
+    animation: blink 1s infinite;
+    background-color: rgba(255, 255, 255, 0.2);
+}
 
-
-
+.countdown-label {
+    font-size: 1rem;
+    color: white;
+    margin-top: 5px;
+    text-align: center; /* Asegura que el texto esté centrado */
+}
 
 /* Contenedor de Preventa */
 .preventa-container {
@@ -352,8 +453,3 @@ body {
 .cta-button-preventa:hover {
     background-color: darkred;
 }
-
-
-
-
-
