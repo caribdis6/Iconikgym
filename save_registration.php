@@ -1,9 +1,9 @@
 <?php
 // Configuración de la base de datos
-$servername = "localhost";
-$username = "root"; // Cambia por tu nombre de usuario de MySQL
-$password = ""; // Cambia por tu contraseña de MySQL
-$dbname = "gym_users"; // El nombre de tu base de datos
+$servername = "localhost"; // Cambia si usas un servidor remoto
+$username = "root"; // Nombre de usuario de MySQL
+$password = ""; // Contraseña de MySQL
+$dbname = "gym_users"; // Nombre de la base de datos
 
 // Crear conexión
 $conn = new mysqli($servername, $username, $password, $dbname);
